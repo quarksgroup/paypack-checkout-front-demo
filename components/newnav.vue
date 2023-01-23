@@ -254,8 +254,8 @@ a {
     // left: 15px;
 }
 .main-nav .nav-link .text-link a.nuxt-link-exact-active .underline span  {
-    width: 30px;
-  height: 2.5px;
+    width: 0px;
+  height: 0px;
   background: #D90368;
   border-radius: 3px;
   margin-left: 30px;

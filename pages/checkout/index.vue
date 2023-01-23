@@ -18,7 +18,7 @@
             <div class="pay-image py-3">
               <div :class="{ active: activeOne }" @click="payActiveOne" class="mb-2">
                 <v-avatar class="profile" color="" size="70" tile>
-                  <img src="" />
+                  <img src="~assets/images/app_logo.png" />
                 </v-avatar>
               </div>
 
