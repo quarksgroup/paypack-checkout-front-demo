@@ -8,7 +8,7 @@
     <v-main class="header-store accent">
       <Nuxt />
     </v-main>
-    <newfooter />
+    <!-- <newfooter /> -->
     </div>
   
   </v-app>
