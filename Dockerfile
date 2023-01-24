@@ -1,26 +1,16 @@
-# Source: https://nuxtjs.org/deployments/koyeb#dockerize-your-application
-FROM node:lts as builder
+FROM node:16-alpine as builder
 
 WORKDIR /app
 
 COPY . .
 
-RUN yarn install \
-  --prefer-offline \
-  --frozen-lockfile \
-  --non-interactive \
-  --production=false
+RUN yarn install
 
 RUN yarn build
 
-RUN rm -rf node_modules && \
-  NODE_ENV=production yarn install \
-  --prefer-offline \
-  --pure-lockfile \
-  --non-interactive \
-  --production=true
+RUN yarn generate
 
-FROM node:lts
+FROM node:16-alpine
 
 WORKDIR /app
 
