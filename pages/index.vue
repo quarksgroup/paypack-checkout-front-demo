@@ -334,7 +334,9 @@ export default {
       }
       finally {
         console.log("data urls", this.response);
-        window.location.href = this.response.payment_link;
+        // window.open(this.response.payment_link);
+        window.location.replace(this.response.payment_link)
+        // window.location.href = this.response.payment_link;
         this.state.buyloading = false;
       }
       // this.$store.dispatch("setBuyNowData", prod);
