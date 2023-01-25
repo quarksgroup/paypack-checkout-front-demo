@@ -334,8 +334,8 @@ export default {
       }
       finally {
         console.log("data urls", this.response);
-        window.open(this.response.payment_link,'_blank');
-        // window.location.replace(this.response.payment_link)
+        // window.open(this.response.payment_link,'_blank');
+        window.location.replace(this.response.payment_link)
         // window.location.href = this.response.payment_link;
         this.state.buyloading = false;
       }
