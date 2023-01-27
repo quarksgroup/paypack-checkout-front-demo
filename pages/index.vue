@@ -9,7 +9,7 @@
     </div>
     <div class="main px-md-16 px-4">
       <v-row>
-        <v-col cols="12" md="6">
+        <v-col cols="12" md="7">
           <div class="" v-if="!small">
             <v-row>
               <v-item-group
@@ -42,7 +42,7 @@
                 </v-item>
               </v-item-group>
 
-              <v-col class="bg-primary">
+              <v-col class="bg-primary" md="10">
                 <v-window v-model="window" class="elevation-1" vertical>
                   <v-window-item
                     v-for="(image, index) in product.images"
@@ -104,7 +104,7 @@
             </v-card>
           </div>
         </v-col>
-        <v-col cols="12" md="6">
+        <v-col cols="12" md="5">
           <div>
             <div>
               <h1 style="color: #2e294e; margin-bottom: 10px" class="name">
